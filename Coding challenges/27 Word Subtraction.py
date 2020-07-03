@@ -6,7 +6,7 @@ def sub(a: str, b: str):
 		for i, l in zip(a, b)])
 
 
-def subLetters(a: str, b: str):  # TODO: Fix subLetters
+def subLetters(a: str, b: str):
 	for i in a:
 		if i in b:
 			a.replace(i, "")
