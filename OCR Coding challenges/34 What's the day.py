@@ -1,3 +1,5 @@
+import datetime
+
 print("*** What's the day ***")
 
 
@@ -14,4 +16,8 @@ def leap(n: int):
 		return False
 
 
-# TODO: What's the day
+def day(year: int, month: int, day: int):
+	try:
+		print(datetime.date(year, month, day).strftime("%A %d. %B %Y"))
+	except ValueError:
+		print("Not a real date")
